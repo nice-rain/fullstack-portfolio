@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Walker Twyman - Fullstack Developer</title>
+        <meta name="description" content="Walker Twyman is a fullstack developer who uses html, css, javascript, jquery, nodejs, and mongodb. His portfolio projects include a fortnite stats comparison application, a cell biology quiz, and a node.js contact form.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+        <link rel="apple-touch-icon" sizes="128x128" href="icon.png">
+        <link rel="icon" sizes="192x192" href="icon-hires.png">
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        
+        <!-- Top grey banner with links on it -->
+        <header class ="nav-bar separator" role="banner">
+            <div class="brand">
+                    <h1>Walker Twyman</h1>
+            </div>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-book"></i> Portfolio</a></li>
+                    <li><a href="#tech"><i class="fas fa-wrench"></i> Skills</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- Main -->
+        <main role="main">
+            <!-- Section for hero image -->
+            <section class="hero-image" role="region">
+                <div class="header-container">
+                    <div class="title-bg">
+                        <h2>Let's Create.</h2>
+                        <a class ="contact-button" href="#contact">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for About -->
+            <a name="about"></a>
+            <section class="about separator" role="region">
+                <div class="container">
+                    <h3><i class="fas fa-user"></i> About</h3>
+                    <a name="about"></a>
+                    <!-- Portfolio Links -->
+                    <p>I have always been excited to learn and create new things. My programming background started off at a young age learning how to modify online games. I created several mods for game like Starsige: Tribes and worked on several small projects with friends using Torque Game Engine Advanced. I eventually moved to Dallas and worked as a programmer for an indie game development company for 2 years.</p>
+
+                    <p>My interest in full stack development started when I began noticing that mobile applications, websites, and games were all able to display the same content delivered by a server. I wanted to learn how to setup and create back-end and front-end systems. I joined Thinful in July, and in the time that I have been studying, I have learned HTML, JavaScript, CSS, and JQuery. Currently, I am studying Node.js and MongoDB. I love building new things and enjoy working with others.</p>
+
+                    <p>Now that you know a little more about me, <a href="#contact">contact me</a>, and let's create something amazing!</p>
+                </div> 
+            </section>
+
+            <!-- Section for Portfolio -->
+            <a name="portfolio"></a>
+            <section class ="separator grey-bg" role="region">
+                <div class="container portfolio">
+                    <h3><i class="fas fa-book"></i> Portfolio</h3>
+                    <!-- Single row that will contain 3 links -->
+                    <div class="portfolio-item"><div class="portfolio-column first-col">
+                        <a href="https://github.com/nice-rain/assessment-grading-app" target="_blank"><img src="images/assessmentgrading.png" alt="Assessment Grading App"></a>
+                        </div><div class="portfolio-column portfolio-description">
+                        <a href="https://github.com/nice-rain/assessment-grading-app" target="_blank"><h4>Assessment Grading App</h4></a>
+                        <p>This is an application for grading assessments and progress monitoring students. It allows you to create a class and add students. You may then create and grade an assessment for each individual class. Once graded, a report will be generated to break down the scores for you.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <div class="portfolio-item"><div class="portfolio-column first-col">
+                            <a href="https://github.com/nice-rain/node-master-server" target="_blank"><img src="images/masterserver.jpg" alt="Master Server"></a>
+                            </div><div class="portfolio-column portfolio-description">
+                            <a href="https://github.com/nice-rain/node-master-server" target="_blank"><h4>Master Server</h4></a>
+                            <p>This is an example master server for online games. A game server can register itself with the master server. The game server must give a heartbeat to the master server every 5 minutes in order to stay listed. Game clients can retrieve a list of living servers from the master server.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>JQuery</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                        <div class="portfolio-item"><div class="portfolio-column first-col">
+                                 <a href="https://github.com/nice-rain/API-Hack-Capstone" target="_blank"><img src="images/fortnitestats.jpg" alt="Fortnite Stats Comparison Application"></a>
+                            </div><div class="portfolio-column portfolio-description">
+                            <a href="https://github.com/nice-rain/API-Hack-Capstone" target="_blank"><h4>Fortnite Stats Comparison App</h4></a>
+                            <p>This application allows the user to look up and compare stats between two Fortnite players.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>JQuery</li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="portfolio-item"><div class="portfolio-column first-col">
+                                <a href="https://github.com/nice-rain/node-contact-form" target="_blank"><img src="images/contactform.jpg" alt="Contact Form"></a>
+                                </div><div class="portfolio-column portfolio-description">
+                                <a href="https://github.com/nice-rain/node-contact-form" target="_blank"><h4>Node.js Contact Form</h4></a>
+                                <p>This contact form allows a user to easily send an email to a website owner or company.</p>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>JQuery</li>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <div class="portfolio-item"><div class="portfolio-column first-col">
+                            <a href="https://github.com/nice-rain/QuizApp" target="_blank"><img src="images/cellquiz.jpg" alt="Cell Biology Quiz App"></a>
+                            </div><div class="portfolio-column portfolio-description">                            
+                            <a href="https://github.com/nice-rain/QuizApp" target="_blank"><h4>Cell Biology Quiz App</h4></a>
+                            <p>This application quizzes the user over 10 cell biology questions. When finised, it will calculate and display the user's score.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>JQuery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <a name="tech"></a>
+            <section class="separator" role="region">
+                <div class="container">
+                    <h3><i class="fas fa-wrench"></i> Skills</h3>
+                    <div class="flex-container">
+                        <figure class="skills-item">
+                            <img src="images/skills/html5.png" alt="HTML 5">
+                            <figcaption>
+                                HTML 5
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-item">
+                            <img src="images/skills/css3.png" alt="CSS 3">
+                            <figcaption>
+                                CSS
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-item">
+                            <img src="images/skills/javascript.png" alt="JavaScript">
+                            <figcaption>
+                                JavaScript
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-item">
+                            <img src="images/skills/react.png" alt="React.js">
+                            <figcaption>
+                                React
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-item">
+                            <img src="images/skills/jquery.png" alt="JQuery">
+                            <figcaption>
+                                JQuery
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-item">
+                            <img src="images/skills/nodejs.png" alt="Node.js">
+                            <figcaption>
+                                Node.js
+                            </figcaption>
+                        </figure>
+
+                        <figure class="skills-item">
+                                <img src="images/skills/express.png" alt="ExpressJS">
+                                <figcaption>
+                                    Express
+                                </figcaption>
+                            </figure>
+
+                        <figure class="skills-item">
+                                <img src="images/skills/mongodb.png" alt="Mongo DB">
+                                <figcaption>
+                                    MongoDB
+                                </figcaption>
+                            </figure> 
+                        
+                        <figure class="skills-item">
+                                <img src="images/skills/mocha.png" alt="Mocha">
+                                <figcaption>
+                                    Mocha
+                                </figcaption>
+                            </figure>
+
+                        <figure class="skills-item">
+                                <img src="images/skills/chai.png" alt="Chai">
+                                <figcaption>
+                                    Chai
+                                </figcaption>
+                            </figure>
+
+                        <figure class="skills-item">
+                                <img src="images/skills/mlab.png" alt="MLab">
+                                <figcaption>
+                                    MLab
+                                </figcaption>
+                            </figure> 
+                        
+                        <figure class="skills-item">
+                            <img src="images/skills/GitHub-Mark-120.png" alt="Github">
+                            <figcaption>
+                                GitHub
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for Contact -->
+            <a name="contact"></a> 
+            <section class ="contact separator grey-bg" role="region">
+                <div class="container">   
+                    <h3><i class="fas fa-envelope"></i> Contact</h3>
+                <p class="contact-form">Please use the form below to contact me:</p>
+                    <div class="success-message">
+                        <h3>Message Successfully Sent!</h3> 
+                        <p class="js-restore-form">To send another click here!</p>
+                    </div>
+                    <form class="contact-form js-contact-form">
+                        <fieldset>
+                            <label for="Name">Name:</label>
+				            <input type="text" name="Name" id="Name" required/>
+				
+				            <label for="Subject">Subject:</label>
+				            <input type="text" name="Subject" id="Subject" required/>
+	
+				            <label for="Email">Email:</label>
+				            <input type="text" name="Email" id="Email" required/>
+
+				            <label for="Message">Message:</label><br />
+				            <textarea name="Message" rows="20" cols="20" id="Message" required></textarea>
+                        </fieldset>
+                        <button type="submit" class="js-contact-submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer role="contentinfo">
+            <div class="container">
+                <p>&copy; Copyright 2018 Walker Twyman</p>
+                <div class="portfolio-links">
+                    <a href="/resources/resume.pdf" title="Resume" target="_blank"><img src="images/icons8-resume-50.png" alt="resume"></a>
+                    <a href="https://linkedin.com/in/wtwyman" title="LinkedIn" target="_blank"><img src="images/icons8-linkedin-filled-50.png" alt="linked in"></a>
+                    <a href="https://github.com/nice-rain" title="GitHub" target="_blank"><img src="images/icons8-github-50.png" alt="git hub"></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <script src="scroll.js"></script>
+    </body>
+
+</html>
