@@ -36,6 +36,23 @@ section{
     padding-bottom:20px;
 }
 
+.demo-link
+{
+    text-align:center;
+    font-weight:bold;
+    font-size:0.8em;
+    color:dodgerblue;
+}
+
+.demo-link a:hover{
+    text-decoration: underline;
+}
+
+.demo-link a:active, .demo-link a:visited
+{
+    color:dodgerblue;
+}
+
 .container{
     min-width:320px;
     max-width:1000px;
