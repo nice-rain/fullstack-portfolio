@@ -14,6 +14,13 @@ function onSendSuccess()
     $('.success-message').show();
 }
 
+function onSendFail()
+{
+    $('.js-contact-form').hide();
+    $('.js-contact-form')[0].reset();
+    $('.failure-message').show();
+}
+
 //Function that sends our email request to our server
 function sendEmailRequest()
 {
@@ -24,7 +31,7 @@ function sendEmailRequest()
 
         //Prepare and send our ajax request
        const request = {
-        url: "https://fullstack-dev.pro/contact",
+        url: "https://api.nicera.in/contact",
         method: "POST",
         contentType: 'application/json',
         dataType: 'json',
@@ -51,6 +58,7 @@ function sendEmailRequest()
     ajaxRequest.fail((err)=>{
         console.log("Data error");
         console.log(err);
+        onSendFail();
     });
 }
 
@@ -75,6 +83,7 @@ function bindRestoreFormLink()
 
         //Simple hide/show for our elements
         $('.success-message').hide();
+        $('.failure-message').hide();
         $('.js-contact-form').show();
         
     });
