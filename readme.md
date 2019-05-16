@@ -8,3 +8,7 @@
 * JQuery
 * Node.js
 * Express
+
+## Deploy
+
+aws s3 sync ./ s3://rl-fullstackdev-portfolio

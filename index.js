@@ -93,6 +93,7 @@ function bindRestoreFormLink()
 
 function setDarkTheme()
 {
+    console.log('setting dark theme');
     //Change all of our css properties to dark ones
     $('.fa-sun').hide();
     $('.fa-moon').show();
@@ -108,10 +109,18 @@ function setDarkTheme()
     for(let style in darkTheme) {
         rootElement.style.setProperty(style, darkTheme[style])
     }
+
+    isDarkTheme = true;
+
 }
 
 function setLightTheme()
 {
+    console.log('setting light theme');
+
+    $('.fa-sun').show();
+    $('.fa-moon').hide();
+
     //Change all of our css properties to light ones
     const rootElement = document.querySelector(':root')
     const lightTheme = {
@@ -123,6 +132,8 @@ function setLightTheme()
     for(let style in lightTheme) {
         rootElement.style.setProperty(style, lightTheme[style])
     }
+
+    isDarkTheme = false;
 }
 
 //Function that will determine whether or not we should load a dark theme
@@ -154,7 +165,17 @@ function bindChangeTheme()
 {
     $('#js-night-mode').on("click", (event)=>{
         console.log('clicked night mode button');
-        setDarkTheme();
+
+        if(!isDarkTheme)
+        {
+            setDarkTheme();
+        }
+        else
+        {
+            setLightTheme();
+        }
+        
+        
     });
 }
 
