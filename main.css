@@ -2,14 +2,18 @@
     box-sizing:border-box;
 }
 
+/*css variable setup*/
+:root {
+    --text-color: #777;
+    --bg-color: #FFF;
+    --heading-font-color: #111;
+    --darker-section: #eee;
+  }
+
 body{
-    /* background-image:url(images/hero_new.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center, center; */
     font-family: 'Roboto', sans-serif;
     color:#777;
+    color:var(--text-color);
     height: 100vh;
 }
 
@@ -30,8 +34,8 @@ body:after{
 }
 
 section{
-    /* min-height:300px; */
-    background-color:#fff;
+    background-color:#fff; /*Fallback*/
+    background-color:var(--bg-color);
     overflow:hidden;
     padding-bottom:20px;
 }
@@ -64,20 +68,20 @@ section{
     margin-bottom:50px;
     text-align:center;
     font-size:2em;
-    color:#000
+    color:var(--heading-font-color);
 }
 
 /* colors background of sections grey */
 .grey-bg
 {
-    background-color:#eee;
+    background-color:var(--darker-section);
 }
 
 
 footer{
     padding-top:10px;
     min-height:40px;
-    background-color:#fff;
+    background-color:var(--bg-color);
     color:rgb(24, 24, 24);
     /* text-align:center; */
 }
@@ -106,9 +110,9 @@ h1, h2, h3{
     display:flex;
     flex-flow:row wrap;
     justify-content:space-around;
-    background-color:white;
+    background-color:var(--bg-color);
     min-height:60px;
-    color:#111;
+    color:var(--heading-font-color);
     padding-top:10px;
     position:fixed;
     width:100%
@@ -116,7 +120,7 @@ h1, h2, h3{
 
 nav a{
     text-decoration:none;
-    color:#777;
+    color:var(--text-color);
     font-size:0.8em;
 }
 
@@ -140,7 +144,7 @@ nav li{
 .hero-image{
     min-height: 100vh;    
     background:none;
-    color:white;
+    color:var(--bg-color);
 }
 
 /* Slogan */
@@ -219,7 +223,7 @@ nav li{
     overflow:hidden;
     width:100%;  
     margin-top:50px;
-    background-color:#eee;
+    background-color:var(--darker-section);
     margin-left:0;
     margin-right:0;
     margin-bottom:0;
@@ -285,7 +289,7 @@ nav li{
     width:150px;
     height:150px;
     margin-top:15px;
-    background-color:#eee;
+    background-color:var(--darker-section);
     margin-left:0;
     margin-right:0;
     margin-bottom:0;
@@ -371,7 +375,7 @@ label {
 	padding-top: 5px;
     font-size: 14px;
     font-weight:bold;
-    color:#111;
+    color:var(--heading-font-color);;
 }
 
 .title-bg{
