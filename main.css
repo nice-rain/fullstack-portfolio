@@ -59,6 +59,10 @@ section{
     color:dodgerblue;
 }
 
+.link-button{
+    cursor: pointer;
+}
+
 .container{
     min-width:320px;
     max-width:1000px;
