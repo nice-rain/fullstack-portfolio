@@ -18,11 +18,11 @@ $('a[href*="#"]')
       var target = $(this.hash);
 
       //Analytics for anchor clicks
-      if(gtag && target)
+      if(gtag && this.hash)
       {
         gtag('event', 'click', {
           'event_category': 'navigation',
-          'event_label': target
+          'event_label': this.hash
         }); 
       }
 
