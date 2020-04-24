@@ -8,7 +8,14 @@ let isDarkTheme = false;
 //Should give a link to click to unhide our form again for another message
 function onSendSuccess()
 {
-    //console.log("On Response Received")
+    //Send our GA event that the user sent an email
+    if(gtag)
+    {
+        gtag('event', 'click', {
+            'event_category': 'contact',
+            'event_label': 'submit'
+        });
+    }
     
     //If our request was successful, hide and reset our form here, then show our success message
     $('.js-contact-form').hide();

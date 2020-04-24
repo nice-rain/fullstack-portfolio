@@ -16,6 +16,16 @@ $('a[href*="#"]')
     ) {
       // Figure out element to scroll to
       var target = $(this.hash);
+
+      //Analytics for anchor clicks
+      if(gtag && target)
+      {
+        gtag('event', 'click', {
+          'event_category': 'navigation',
+          'event_label': target
+        }); 
+      }
+
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
       if (target.length) {
