@@ -190,6 +190,7 @@ nav li{
     border:1px solid white;
     color:white;
     font-size:1.2em;
+    transition: 0.3s ease-in-out;
 }
 
 .contact-button:hover{
@@ -228,8 +229,22 @@ nav li{
 
 .portfolio-links
 {
-    width:fit-content;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
 
+.portfolio-links a{
+    color: var(--text-color);
+    transition: color 0.5s ease-in-out;
+    font-size: 2.7rem;
+    margin: 0 5px;
+}
+
+.portfolio-links a:hover,
+.portfolio-links a:focus,
+.portfolio-links a:active{
+    color:rgb(82, 185, 226);
 }
 
 .flex-container{
@@ -249,6 +264,7 @@ nav li{
     margin-left:0;
     margin-right:0;
     margin-bottom:0;
+    border-radius: 0.2rem;
 }
 
 .portfolio-column{
@@ -318,6 +334,7 @@ nav li{
     margin-bottom:0;
     text-align:center;
     padding-top:10px;
+    border-radius: 0.2rem;
 }
 
 .skills-item figcaption{
@@ -407,6 +424,7 @@ label {
     padding:20px 20px 35px 20px;
     max-width:350px;
     margin:0 auto;
+    border-radius: 0.2rem;
 }
 
 /* container for our message successfully sent */
