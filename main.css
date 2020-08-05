@@ -353,6 +353,13 @@ nav li{
     color:#1d89be;
 }
 
+.skills-item picture,
+.skills-item img{
+    width:auto;
+    height:100px;
+    object-fit:cover;
+}
+
 .portfolio-description{
     line-height:normal;
     padding-left:20px;
