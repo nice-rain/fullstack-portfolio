@@ -98,6 +98,8 @@ function bindRestoreFormLink()
     });
 }
 
+
+
 function setDarkTheme()
 {
     console.log('setting dark theme');
@@ -186,6 +188,8 @@ function bindChangeTheme()
     });
 }
 
+
+
 //Function to load all click bindings on the page
 function loadBindings()
 {
@@ -193,6 +197,18 @@ function loadBindings()
     bindRestoreFormLink();
     loadColorTheme();
     bindChangeTheme();
+
+    //Runs on load to set our icons for changing color scheme
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        $('.fa-sun').hide();
+        $('.fa-moon').show();
+        isDarkTheme = true;
+    }
+    else{
+        $('.fa-sun').show();
+        $('.fa-moon').hide();
+        isDarkTheme = false;
+    }
 }
 
 //Runs when page loads

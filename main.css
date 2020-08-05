@@ -10,6 +10,16 @@
     --darker-section: #eee;
   }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #bbb;
+        --bg-color: #222;
+        --heading-font-color: #eee;
+        --darker-section: #292929;
+    }
+} 
+
+
 body{
     font-family: 'Roboto', sans-serif;
     color:#777;
@@ -91,7 +101,7 @@ footer{
     min-height:40px;
     background-color:var(--bg-color);
     transition: background-color .5s ease-in-out;
-    color:rgb(24, 24, 24);
+    color:var(--text-color);
     /* text-align:center; */
 }
 
@@ -438,11 +448,11 @@ label {
 
 .fa-moon{
     display: none;
-    color:white;
+    color:var(--text-color);
 }
 
 .fa-sun{
-    color:black;
+    color:var(--text-color);
 }
 
 /* ------------------------------------------------ */
