@@ -6,6 +6,7 @@
 :root {
     --text-color: #777;
     --bg-color: #FFF;
+    --card-color: #FFF;
     --heading-font-color: #111;
     --darker-section: #eee;
   }
@@ -14,6 +15,7 @@
     :root {
         --text-color: #bbb;
         --bg-color: #222;
+        --card-color: #FFF;
         --heading-font-color: #eee;
         --darker-section: #292929;
     }
@@ -253,6 +255,19 @@ nav li{
     justify-content:space-around;
 }
 
+.card{
+    background-color: var(--card-color);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 0.2rem;
+    margin: 8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 5px;
+}
+
 /* Single portfolio item */
 .portfolio-item{
     border:1px solid dodgerblue;
@@ -322,19 +337,15 @@ nav li{
 }
 
 .skills-item{
-    border:1px solid dodgerblue;
     overflow:hidden;
     width:150px;
     height:150px;
+    margin:0;
     margin-top:15px;
-    background-color:var(--darker-section);
-    transition: background-color .5s ease-in-out;
-    margin-left:0;
-    margin-right:0;
-    margin-bottom:0;
     text-align:center;
     padding-top:10px;
     border-radius: 0.2rem;
+    flex-direction:column;
 }
 
 .skills-item figcaption{
@@ -357,6 +368,19 @@ nav li{
 {
     clear:both;
     margin:0;
+}
+
+/*Client Work Section*/
+.client-card{
+    height: 80px;
+    min-width: 300px;
+}
+
+.client-card picture,
+.client-card img{
+    object-fit:cover;
+    height:100%;
+    width:auto;
 }
 
 /* ------------------------------------------------ */
