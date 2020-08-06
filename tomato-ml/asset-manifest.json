@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c112b4f.chunk.css",
-    "main.js": "/static/js/main.40838b40.chunk.js",
-    "main.js.map": "/static/js/main.40838b40.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.57577930.js",
-    "runtime-main.js.map": "/static/js/runtime-main.57577930.js.map",
-    "static/js/2.1ea13db0.chunk.js": "/static/js/2.1ea13db0.chunk.js",
-    "static/js/2.1ea13db0.chunk.js.map": "/static/js/2.1ea13db0.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.0d15382241885ef61faadba63924adfe.js": "/precache-manifest.0d15382241885ef61faadba63924adfe.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.6c112b4f.chunk.css.map": "/static/css/main.6c112b4f.chunk.css.map",
-    "static/js/2.1ea13db0.chunk.js.LICENSE.txt": "/static/js/2.1ea13db0.chunk.js.LICENSE.txt"
+    "main.css": "/tomato-ml/static/css/main.6c112b4f.chunk.css",
+    "main.js": "/tomato-ml/static/js/main.4f44274a.chunk.js",
+    "main.js.map": "/tomato-ml/static/js/main.4f44274a.chunk.js.map",
+    "runtime-main.js": "/tomato-ml/static/js/runtime-main.ae846d61.js",
+    "runtime-main.js.map": "/tomato-ml/static/js/runtime-main.ae846d61.js.map",
+    "static/js/2.1ea13db0.chunk.js": "/tomato-ml/static/js/2.1ea13db0.chunk.js",
+    "static/js/2.1ea13db0.chunk.js.map": "/tomato-ml/static/js/2.1ea13db0.chunk.js.map",
+    "index.html": "/tomato-ml/index.html",
+    "precache-manifest.5ec78d655e3c407fe6ab49053d6548f3.js": "/tomato-ml/precache-manifest.5ec78d655e3c407fe6ab49053d6548f3.js",
+    "service-worker.js": "/tomato-ml/service-worker.js",
+    "static/css/main.6c112b4f.chunk.css.map": "/tomato-ml/static/css/main.6c112b4f.chunk.css.map",
+    "static/js/2.1ea13db0.chunk.js.LICENSE.txt": "/tomato-ml/static/js/2.1ea13db0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.57577930.js",
+    "static/js/runtime-main.ae846d61.js",
     "static/js/2.1ea13db0.chunk.js",
     "static/css/main.6c112b4f.chunk.css",
-    "static/js/main.40838b40.chunk.js"
+    "static/js/main.4f44274a.chunk.js"
   ]
 }
