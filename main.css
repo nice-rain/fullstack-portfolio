@@ -68,7 +68,9 @@ section{
     text-decoration: underline;
 }
 
-.demo-link a:active, .demo-link a:visited
+.demo-link a:active, 
+.demo-link a:visited,
+.demo-link a
 {
     color:dodgerblue;
 }
@@ -279,7 +281,7 @@ nav li{
 
 /* Single portfolio item */
 .portfolio-item{
-    border:1px solid dodgerblue;
+    /* border:1px solid dodgerblue; */
     overflow:hidden;
     margin-top:25px;
     /* background-color:var(--darker-section); */
@@ -295,6 +297,10 @@ nav li{
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
+
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
 
 .portfolio-description{
@@ -307,14 +313,14 @@ nav li{
     padding-top:15px;
     visibility: hidden;
     opacity:0;
-    transition: visibility 0s 0.3s, opacity 0.3s ease-in-out;
+    transition: visibility 0s 0.4s, opacity 0.4s ease-in-out;
 }
 
 /*Selector for hover visibility*/
 .portfolio-item:hover > .portfolio-description{
     opacity:1;
     visibility: visible;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .portfolio-item figcaption{
@@ -353,6 +359,7 @@ nav li{
     display:inline;
     border: 1px solid grey;
     padding:3px;
+    white-space: nowrap;
 }
 
 .portfolio-item a{
