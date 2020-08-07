@@ -113,7 +113,8 @@ function setDarkTheme()
         '--text-color': '#bbb',
         '--bg-color': '#222',
         '--heading-font-color': '#eee',
-        '--darker-section': '#292929'
+        '--darker-section': '#292929',
+        '--card-background': '#000000ef'
     }
     for(let style in darkTheme) {
         rootElement.style.setProperty(style, darkTheme[style])
@@ -136,7 +137,8 @@ function setLightTheme()
         '--text-color': '#777',
         '--bg-color': '#FFF',
         '--heading-font-color': '#111',
-        '--darker-section': '#eee'
+        '--darker-section': '#eee',
+        '--card-background' : '#fffffff7'
     }
     for(let style in lightTheme) {
         rootElement.style.setProperty(style, lightTheme[style])
