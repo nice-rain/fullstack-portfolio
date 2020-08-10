@@ -104,8 +104,8 @@ function setDarkTheme()
 {
     console.log('setting dark theme');
     //Change all of our css properties to dark ones
-    $('.fa-sun').hide();
-    $('.fa-moon').show();
+    $('.fa-sun').show();
+    $('.fa-moon').hide();
     
 
     const rootElement = document.querySelector(':root')
@@ -128,8 +128,8 @@ function setLightTheme()
 {
     console.log('setting light theme');
 
-    $('.fa-sun').show();
-    $('.fa-moon').hide();
+    $('.fa-sun').hide();
+    $('.fa-moon').show();
 
     //Change all of our css properties to light ones
     const rootElement = document.querySelector(':root')
@@ -202,13 +202,13 @@ function loadBindings()
 
     //Runs on load to set our icons for changing color scheme
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        $('.fa-sun').hide();
-        $('.fa-moon').show();
+        $('.fa-sun').show();
+        $('.fa-moon').hide();
         isDarkTheme = true;
     }
     else{
-        $('.fa-sun').show();
-        $('.fa-moon').hide();
+        $('.fa-sun').hide();
+        $('.fa-moon').show();
         isDarkTheme = false;
     }
 }
